@@ -1,4 +1,7 @@
-const Increment = ({increment}) => <button onClick={increment}>+</button>
+import React from 'react';
 
-export default Increment
-        
+function Increment({ increment }) {
+  return <button onClick={increment}>+</button>;
+}
+
+export default Increment;
