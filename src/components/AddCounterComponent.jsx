@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export default function AddCounterComponent({addcounter}) {
-    return (
-        <div>
-            <button onClick={addcounter}>Add Counter</button>
-        </div>
-    )
+function AddCounterComponent({ addcounter }) {
+  return <button onClick={addcounter}>Add Counter</button>;
 }
+
+export default AddCounterComponent;

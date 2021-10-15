@@ -1,15 +1,16 @@
-import Decrement from "./Decrement";
-import Increment from "./Increment";
+import Decrement from './Decrement';
+import Increment from './Increment';
 
-export default function Counter({ indexCounter,amount,increment,decrement }) {
-
+function Counter({ indexCounter, amount, increment, decrement }) {
   return (
     <div>
       Contador {indexCounter} - Valor Atual: {amount}
       <div>
         <Increment increment={() => increment(indexCounter)} />
-        <Decrement decrement={() => decrement(indexCounter)} />            
+        <Decrement decrement={() => decrement(indexCounter)} />
       </div>
     </div>
   );
 }
+
+export default Counter;

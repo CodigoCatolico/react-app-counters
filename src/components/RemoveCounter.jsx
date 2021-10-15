@@ -1,10 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export default function RemoveCounter({deleteCounter}) {
-    return (
-        <div>
-            <button onClick={deleteCounter}>Remover Counter</button>
-
-        </div>
-    )
+function RemoveCounter({ deleteCounter }) {
+  return <button onClick={deleteCounter}>Remover Counter</button>;
 }
+
+export default RemoveCounter;
